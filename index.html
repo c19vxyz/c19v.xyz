@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="sv-SE" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>c19v.xyz</title>
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<link rel="stylesheet" href="coviddata.css">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+
+<header class="main-header">
+<h1>c19v.xyz</h1>
+</header>
+
+<div class="table-wrap">
+<div class="search-container">
+<input type="text" id="tableSearch" placeholder="Sök bland 3 500+ dokument, länkar och videos...">
+<select id="rowsPerPage">
+<option value="50">50 rader</option>
+<option value="100" selected>100 rader</option>
+<option value="250">250 rader</option>
+<option value="1000">1000 rader</option>
+</select>
+</div>
+
+
+<table id="sortable">
+<thead>
+<tr>
+
+<th scope="col" data-column="0" data-dir="asc">
+<button type="button">Typ <span>⇅</span></button>
+</th>
+
+<th scope="col" data-column="1" data-dir="asc">
+<button type="button">Titel<span>⇅</span></button>
+</th>
+
+<th scope="col">
+<button type="button" disabled>Länk</button>
+</th>
+
+</tr>
+</thead>
+<tbody>
+<tr id="noResults">
+<td id="inga-resultat" colspan="3">Noll resultat.<br>Du kanske stavade fel?</td>
+</tr>
+</tbody>
+</table>
+
+<div class="pagination">
+<button id="prevPage">Förra</button>
+<span id="pageInfo"></span>
+<button id="nextPage">Nästa</button>
+</div>
+</div>
+
+<div class="top">
+<h3 class="faqh">Frågor &amp; Svar</h3>
+<p class="ot">svar mån-fre mellan 10-18</p>
+<div class="accordion-container">
+
+<details class="accordion-item" name="faq">
+<summary class="accordion-title">Integritet &amp; Säkerhet</summary>
+<div class="accordion-content">
+<p>För din <strong>säkerhet</strong> och <strong>integritet</strong>, uppmanar vi dig att använda <a href="https://www.torproject.org/download/" target="_blank" rel="noopener noreferrer nofollow">Tor webbläsaren</a> oavsett vad du tänker surfa till 😝</p>
+</div>
+</details>
+
+<details class="accordion-item" name="faq">
+<summary class="accordion-title">Funktionalitet</summary>
+<div class="accordion-content">
+
+<h3>Inte 100% än...</h3>
+<p>Datafilen som används kommer att uppdateras kontinuerligt i syfte att förbättra rubrikerna (Titel), vilket i sin tur gör sökningen bättre.</p>
+
+<h3>Hitta i tabellen</h3>
+<p>Hemsidans information är uppdelad i tre kolumner: <strong>Typ</strong>, <strong>Titel</strong> och <strong>Länk</strong> och du kan filtrera Typ och Titel. Datafilen har över 3 500 enskilda inlägg och den sparas lokalt för att göra sidan snabbare. Filen innehåller studier, forskningsrapporter, avslöjanden, sekretessbelagt material, avtal och videos.</p>
+
+<h3>Sök efter innehåll</h3>
+<p>Du kan skriva hur kort eller långt du vill i sökfältet. När du skriver sker en kort fördröjning innan resultaten visas. Om det du söker inte finns, kontrollera din stavning och försök igen.</p>
+
+<h3>Öppna källor</h3>
+<p>Klicka på knappen i kolumnen <i>"Länk"</i> för att ta del av materialet. Alla länkar öppnas automatiskt i en ny flik/tabb i din webbläsare och hemsidan använder naturligtvis säkerhetsinställningen <code>rel="noopener noreferrer nofollow"</code> vars enda syfte handlar om att skydda din integritet vid besök av externt material.</p>
+</div>
+</details>
+
+<details class="accordion-item" name="faq">
+<summary class="accordion-title">Saknas eller är något fel?</summary>
+<div class="accordion-content">
+
+<p>Saknar du något på hemsidan, eller har du hittat ett fel? Om så är fallet, vänligen <a href="mailto:covid19vaccinen.sverige@proton.me">kontakta hemsidan</a> så löser det sig. <strong>Tips:</strong> installera och använd <a href="https://www.torproject.org/download/" target="_blank" rel="noopener noreferrer nofollow">Tor webbläsaren</a> för all din surf på internet. 100% surf anonymitet är inte fel.</p>
+</div>
+</details>
+
+<details class="accordion-item" name="faq">
+<summary class="accordion-title">Till visselblåsare</summary>
+<div class="accordion-content">
+
+<h3>Detta är <strong>INTE</strong> media</h3>
+
+<p>Det finns, som alla vet, olika uttryck gällande innehav av underlag som annars aldrig blivit föremål för - men enkelt uttryckt så är du en visselblåsare.</p>
+
+<p>Argumenten är av mindre betydelse då informationen, oavsett dess natur, alltid skall delges allmänheten då alla har rätt att veta, <strong>punkt slut</strong>. Hemsidan applicerar inte någon form av juridisk försiktighet, inte heller räds hemsidan potentiella rättsliga åtgärder - något som redan bevisats i flertalet svenska tidningar.</p>
+
+<p>För snart fyra år sedan, juni 2022, riskerades fyra års fängelse för att ha publicerat en lista som innehöll nästan 800 vaccinerade barn, varav det yngsta bara var åtta månader då andra dosen gavs. En del av dessa 800 dog. <strong>Hemsidans poäng är tydlig:</strong> innehållet är alltid viktigare än eventuell konsekvens. Ärendet blev nerlagt och avskrivet.</p>
+
+<h3>Du är SKYDDAD</h3>
+<p>Hemsidan avslöjar aldrig någonting om visselblåsaren. Hemsidan har inget utgivningsbevis och har inte heller ansökt om sådant från Mediemyndigheten. Med det sagt så placeras <strong>allt material</strong> på världens säkraste plattform, vilket från ett tekniskt perspektiv innebär att ingen förutom hemsidan kan lägga till / ta bort material. Varken polisen, SÄPO, NOA, Europol eller andra instanser/myndigheter kan påverka detta, vilket rättegången samt utredningen också bevisat.</p>
+
+<h3>Har alla rätt att veta?</h3>
+<p>Hemsidans ståndpunkt i den frågan är enkel: allmänheten - alltså hela världens befolkning, har rätt att få veta. Det är och förblir hemsidans ståndpunkt och åsikt. Detta förändrar inte att en visselblåsare kan uppleva oro eller vara rädd för att våld eller hot kan bli aktuellt och utövas mot familjen, nära och kära samt övriga inom umgängeskretsen om materialet blir publicerat. Av dessa uppenbara skäl måste visselblåsaren först och främst tänka på egen anonymitet och säkerhet då det är givetvis är det viktigaste.</p>
+
+<h3>Redo att blåsa?</h3>
+<p>Som primär utövare av att offentliggöra information som omfattas av sekretess eller som är av känslig natur, installera <a href="http://2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion/download/index.html" target="_blank" rel="noopener noreferrer nofollow">Tor webbläsaren</a>, öppna Tor och gå till <a href="https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/" target="_blank" rel="noopener noreferrer nofollow">Protons Tor adress (.onion)</a>, skapa ett gratis konto och skicka alla mejl via Tor hädanefter.</p>
+</div>
+</details>
+
+</div>
+</div>
+
+<footer class="main-footer">
+<div class="footer-col"><a href="https://drive.proton.me/urls/0MJK35S8H8#xqp4YXBmda0w" target="_blank" rel="noopener noreferrer nofollow">EU-Avtalen</a></div>
+<div class="footer-col"><a href="https://web.archivep75mbjunhxc6x4j5mwjmomyxb573v42baldlqu56ruil2oiad.onion/web/20220627161650/https://covid19vaccinen.se/" target="_blank" rel="noopener noreferrer nofollow">Barnen (Tor)</a></div>
+<div class="footer-col"><a href="https://phmpt.org/multiple-file-downloads/" target="_blank" rel="noopener noreferrer nofollow">FDA Dok</a></div>
+</footer>
+
+<script src="coviddata.js" defer></script>
+</body>
+</html>
